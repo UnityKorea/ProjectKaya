@@ -12,16 +12,32 @@ Project Kaya is a mobile example project for using Unity URP by Unity Technologi
 - Android Platform
 - Vulkan API supported
 
-## Texture Compression
-[ASTC] Texture Based
-대부분의 Texture 압축은 ASTC를 사용하고 있습니다. ASTC
+## Resource Compression
+대부분의 Texture compression은 [ASTC] 를 사용하고 있습니다.
+일부 리소스의 경우 압축하지 않은 RGB24 혹은 RGBA32입니다.
 
-## Roby Demo Scene
+Normal texture에서 용량을 줄이기 위해서는 ASTC와 none copmpressed를 적절히 사용하는 것을 권장합니다.
+
+
+## Scene List
 
 Roby scene은 로비 구현에 필요한 연출과 shader 예제를 제공하고 있습니다.
 Animation type은 Generic으로 mechanim으로 구성되어 있습니다.
 
-### Cinemachine
+### Roby Scene
+
+#### FPS Counter & information display
+![image](https://user-images.githubusercontent.com/33303599/132303319-4ed3b427-a6fb-485f-abe9-9378622a5b42.png)
+
+- Frame Rate Counter : 화면 왼측 상단에는 현재 Frame Rate에 대한 정보를 밀리세컨(millisecond, ms)과 프레임으로 표시되고 있습니다. 
+- Display pixel Resoultion : Rendering 되고 있는 현재 해상도를 보여줍니다.
+- Graphics API : 현재 렌더링 되고 있는 Graphics API 정보를 보여줍니다. 
+
+#### Cinemachine
+
+Roby Scene에서 카메라 전환은 Cinemachine을 활용해서 이루어지고 있습니다. 
+
+
 
 
 ### PBR Custom Shader(Shader Graph)
