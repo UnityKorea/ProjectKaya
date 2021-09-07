@@ -43,12 +43,10 @@ Roby Scene에서 카메라 전환은 Cinemachine을 활용해서 이루어지고
 Camera아래에 아래와 같이 Cinemachine camera가 배치되어 있습니다.
 
   - 1번 카메라 : 얼굴 근접 CM Face Shot. 1번 카메라에만 Depth of Field가 적용되어 있습니다.
-  - 
 ![image](https://user-images.githubusercontent.com/33303599/132324090-1fa2b310-a6e5-4496-a2cc-a63432fb663a.png)
 
   - 2번 카메라 : 전신 CM FullBody shot
 ![image](https://user-images.githubusercontent.com/33303599/132324179-a99e83dd-9ccf-4f04-8598-84573a4584ae.png)
-
 
   - 3번 카메라 : 스킬 CM Skill Shot
 ![image](https://user-images.githubusercontent.com/33303599/132324217-9febd61d-715f-4fd4-b97b-47d3301a5fe3.png)
