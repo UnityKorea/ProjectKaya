@@ -1,5 +1,6 @@
 
 # ProjectKaya
+![image](https://user-images.githubusercontent.com/33303599/132323335-2ffb8e2c-600a-4672-8a60-14c312b16aeb.png)
 
 
 프로젝트 카야는 유니티 코리아에서 진행하는 URP를 활용한 모바일 예제 프로젝트 입니다.
@@ -37,14 +38,32 @@ Animation type은 Generic으로 mechanim으로 구성되어 있습니다.
 
 Roby Scene에서 카메라 전환은 Cinemachine을 활용해서 이루어지고 있습니다. 
 
+![image](https://user-images.githubusercontent.com/33303599/132322706-468b84a2-0f3e-4ed8-8601-604dbfa857fa.png )
+
+Camera아래에 아래와 같이 Cinemachine camera가 배치되어 있습니다.
+
+  - 1번 카메라 : 얼굴 근접 CM Face Shot. 1번 카메라에만 Depth of Field가 적용되어 있습니다.
+  - 
+![image](https://user-images.githubusercontent.com/33303599/132324090-1fa2b310-a6e5-4496-a2cc-a63432fb663a.png)
+
+  - 2번 카메라 : 전신 CM FullBody shot
+![image](https://user-images.githubusercontent.com/33303599/132324179-a99e83dd-9ccf-4f04-8598-84573a4584ae.png)
+
+
+  - 3번 카메라 : 스킬 CM Skill Shot
+![image](https://user-images.githubusercontent.com/33303599/132324217-9febd61d-715f-4fd4-b97b-47d3301a5fe3.png)
+
+### Realtime Reflection 
+Render texture와 shader custom을 통한 실시간 reflection을 구현한 예제입니다.
+![image](https://user-images.githubusercontent.com/33303599/132324579-3c4eae96-c885-4447-9133-6b7e1b2245f6.png)
+
+
 
 
 
 ### PBR Custom Shader(Shader Graph)
 
 
-### Realtime Reflection 
-Render texture와 shader custom을 통한 실시간 reflection을 구현한 예제입니다.
 
 ### hair shader(Shader Graph)
 
