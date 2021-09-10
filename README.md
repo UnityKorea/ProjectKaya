@@ -17,6 +17,11 @@ Project Kaya is a mobile example project for using Unity URP by Unity Technologi
 대부분의 Texture compression은 [ASTC] 를 사용하고 있습니다.
 일부 리소스의 경우 압축하지 않은 RGB24 혹은 RGBA32입니다.
 
+![image](https://user-images.githubusercontent.com/33303599/132826800-5ec62cdb-d038-4847-9660-ad9879a9b69d.png)
+
+_- 2048 normal texture를 ASTC12x12(0.6MB)으로 압축한것(좌)과 ASTC6x6(2.4MB)로 압축한 결과(우) 비교
+Albedo texture의 경우보다 normal texture에서 이런 증상이 두드러지며 이럴경우는 리소스 압축을 직접 선택하는 것을 권장합니다._
+
 Normal texture에서 용량을 줄이기 위해서는 ASTC와 none copmpressed를 적절히 사용하는 것을 권장합니다.
 
 
