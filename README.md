@@ -8,10 +8,21 @@
 Project Kaya is a mobile example project for using Unity URP by Unity Technologies Korea.
 
 ## Requirement
-- Unity 2021.1.13f1
+- Unity 2021.1.13f1(Android module required)
 - [URP 11.0] version needed
 - Android Platform
 - Vulkan API supported
+
+- editor setting
+
+![image](https://user-images.githubusercontent.com/33303599/133015834-bc3959db-a788-4f80-b549-06b65a4f2518.png)
+
+Kaya project는 android 플랫폼을 기준으로 작업되고 있습니다. 이를 위해서 editor를 이와 같은 환경으로 셋팅해주어야 합니다. 커맨드라인 인자 추가에 -force-vulkan을 입력해 vulkan api로 동작하도록 설정합니다. 그리고 플랫폼을 android로 선택하게 됩니다(에디터 설치시에 android 모듈이 설치되어야 합니다
+
+![image](https://user-images.githubusercontent.com/33303599/133015950-73405cb4-9ffd-4001-bf77-15a320f4172e.png)
+
+![image](https://user-images.githubusercontent.com/33303599/133015976-bac16f85-cfd3-415c-8812-edd9923efc1f.png)
+
 
 ## Resource Compression
 대부분의 Texture compression은 [ASTC] 를 사용하고 있습니다.
@@ -69,22 +80,17 @@ Render texture와 shader custom을 통한 실시간 reflection을 구현한 예�
 
 
 ### hair shader(Shader Graph)
+-------------------------------
+#### UTKTemplate/URPHairKajiyaKay
 
+![image](https://user-images.githubusercontent.com/33303599/133016997-e77b712e-c877-4841-9c5c-d3cf5a53aa00.png)
 
-### hair shader(HLSL shader)
+- HLSL code based shader
+- supported flowmap UV(does not need to vertical wrapped UVs)
+- supported additional light & additional light shadow
+- supported speucular shiftmap
 
-HLSL로 작성된 Shader는 아래와 같은 내용을 지원합니다.
-
-- KajiyaKay Hair highlight
-- Additional lighting
-- Additional realtime shadow
-- vertex light & pixel light
-
-
-![image](https://user-images.githubusercontent.com/33303599/132298338-2db312c7-6c79-4b77-8190-74f73d875b8a.png)
-
-
-![image](https://user-images.githubusercontent.com/33303599/132298274-afbfb960-daea-4c60-b359-a821382b4279.png)
+![image](https://user-images.githubusercontent.com/33303599/133017036-204d8e9f-37df-4ab0-a27d-8dcfbeb42e26.png)
 
 
 [URP 11.0]: https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@11.0/changelog/CHANGELOG.html
