@@ -51,11 +51,15 @@ Animation type은 Generic으로 mechanim으로 구성되어 있습니다.
 
 #### Cinemachine
 
-Roby Scene에서 카메라 전환은 Cinemachine을 활용해서 이루어지고 있습니다. 
+Roby Scene에서 카메라 전환은 Cinemachine을 활용해서 이루어지고 있습니다. 카메라의 Priority값을 UI에서 바꿔줌으로써 카메라간 전환이 이루어지게 됩니다. 
+
+![image](https://user-images.githubusercontent.com/33303599/133052473-d765f541-a6ed-469f-b6d4-0036be3f4c18.png)
+
+Scene에 CinemachineVirtualCamera를 배치하면 카메라는 해당 버추얼 카메라의 포지션으로 이동하게 됩니다. 
 
 ![kayaCinemachine](https://user-images.githubusercontent.com/33303599/133038603-8427de53-bc4b-4c95-b415-5661d6afb4ce.gif)
 
-Camera아래에 아래와 같이 Cinemachine camera가 배치되어 있습니다.
+
 
   - 1번 카메라 : 얼굴 근접 CM Face Shot. 1번 카메라에만 Depth of Field가 적용되어 있습니다.
 ![image](https://user-images.githubusercontent.com/33303599/132324090-1fa2b310-a6e5-4496-a2cc-a63432fb663a.png)
