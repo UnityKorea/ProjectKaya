@@ -54,7 +54,7 @@ Animation type은 Generic으로 mechanim으로 구성되어 있습니다.
 
 Roby Scene에서 카메라 전환은 Cinemachine을 활용해서 이루어지고 있습니다. 
 
-![image](https://user-images.githubusercontent.com/33303599/132322706-468b84a2-0f3e-4ed8-8601-604dbfa857fa.png )
+![kayaCinemachine](https://user-images.githubusercontent.com/33303599/133038603-8427de53-bc4b-4c95-b415-5661d6afb4ce.gif)
 
 Camera아래에 아래와 같이 Cinemachine camera가 배치되어 있습니다.
 
