@@ -83,7 +83,7 @@ Render texture와 shader custom을 통한 실시간 reflection을 구현한 예�
 -------------------------------
 #### UTKTemplate/URPHairKajiyaKay
 
-![image](https://user-images.githubusercontent.com/33303599/133016997-e77b712e-c877-4841-9c5c-d3cf5a53aa00.png)
+![kaya01](https://user-images.githubusercontent.com/33303599/133038253-0d4a0aa0-c172-4540-a75c-4569732005a7.gif)
 
 - HLSL code based shader
 - supported flowmap UV(does not need to vertical wrapped UVs)
