@@ -80,6 +80,13 @@ Render texture와 shader custom을 통한 실시간 reflection을 구현한 예�
 
 ### PBR Custom Shader(Shader Graph)
 
+![image](https://user-images.githubusercontent.com/33303599/134846521-b66b7475-f760-42aa-9c78-4c758e74096c.png)
+
+kaya에 쓰이는 기본 shader는 URP Lit shader를 기반으로 shader graph에서 제작한 셰이더가 쓰이고 있습니다. 
+하나의 캐릭터 금속, 천, 가죽등 다양한 재질을 표현하기 위해 캐릭터 컨셉에서부터 이런 점을 고려하여 진행하였습니다. 
+
+
+
 
 
 ### hair shader(Shader Graph)
@@ -94,6 +101,11 @@ Render texture와 shader custom을 통한 실시간 reflection을 구현한 예�
 - supported speucular shiftmap
 
 ![image](https://user-images.githubusercontent.com/33303599/133017036-204d8e9f-37df-4ab0-a27d-8dcfbeb42e26.png)
+
+### Skin shader(Shader Graph)
+-------------------------------
+
+
 
 
 [URP 11.0]: https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@11.0/changelog/CHANGELOG.html
