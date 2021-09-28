@@ -3,8 +3,7 @@
 ![image](https://user-images.githubusercontent.com/33303599/132323335-2ffb8e2c-600a-4672-8a60-14c312b16aeb.png)  
 프로젝트 카야는 유니티 코리아에서 진행하는 URP를 활용한 모바일 예제 프로젝트 입니다. 공개된 repository는 지속적으로 업데이트 되며, 사용자가 프로젝트에 기여하는 것도 가능합니다.   
 Project Kaya is a mobile example project for using Unity URP by Unity Technologies Korea.  
-## Requirement
-===========================
+## Requirement  
 - Unity 2021.1.13f1(Android module required)  
 - [URP 11.0] version needed  
 - Android Platform  
@@ -52,7 +51,6 @@ kaya에 쓰이는 기본 shader는 URP Lit shader를 기반으로 shader graph�
 - Shader Graph를 사용해서 Lit shader의 metallic과 smoothness, AO를 하나의 mask texture로 사용하게 되었으며, smoothness 값은 remap으로 처리하고 있습니다.  
 ![image](https://user-images.githubusercontent.com/33303599/135035193-b32e6548-ee44-43e4-abbd-c1f596e40084.png)  
 ### hair shader(Shader Graph)  
--------------------------------
 #### UTKTemplate/URPHairKajiyaKay  
 ![kaya01](https://user-images.githubusercontent.com/33303599/133038253-0d4a0aa0-c172-4540-a75c-4569732005a7.gif)  
 - HLSL code based shader  
@@ -62,8 +60,8 @@ kaya에 쓰이는 기본 shader는 URP Lit shader를 기반으로 shader graph�
 ![image](https://user-images.githubusercontent.com/33303599/133017036-204d8e9f-37df-4ab0-a27d-8dcfbeb42e26.png)  
 #### Shader Graphs/KajiyaKay  
 ![image](https://user-images.githubusercontent.com/33303599/135035913-072f97b9-72f3-400d-a64a-bfa81719d604.png)  
-### Skin shader(Shader Graph)  
--------------------------------
+### Skin shader(Shader Graph)   
+
 
 [URP 11.0]: https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@11.0/changelog/CHANGELOG.html
 [ASTC]: https://en.wikipedia.org/wiki/Adaptive_scalable_texture_compression
