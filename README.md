@@ -43,6 +43,13 @@ Scene에 CinemachineVirtualCamera를 배치하면 카메라는 해당 버추얼 
 ### Realtime Reflection   
 Render texture와 shader custom을 통한 실시간 reflection을 구현한 예제입니다.  
 ![image](https://user-images.githubusercontent.com/33303599/135037058-8404b58e-22da-416d-8b07-d5ac64934cdd.png)  
+
+![image](https://user-images.githubusercontent.com/33303599/135055680-c36ab1b8-e85d-40e3-b19e-12592c462e57.png)  
+- Resoultion Mutiplier : 렌더링되는 반사이미지의 해상도를 설정  
+- Clip Plane Offset : 반사되는 이미지의 시작점을 설정  
+- Reflect Layer : 반사를 적용할 오브젝트 레이어를 선택  
+![image](https://user-images.githubusercontent.com/33303599/135055375-924ad498-233b-49e2-8f61-a0bd33d605bd.png)  
+
 ### PBR Custom Shader(Shader Graph)  
 ![image](https://user-images.githubusercontent.com/33303599/135037941-8754a264-e9e6-4da9-8fea-2e8f9122cf58.png)  
 kaya에 쓰이는 기본 shader는 URP Lit shader를 기반으로 shader graph에서 제작한 셰이더가 쓰이고 있습니다.   
