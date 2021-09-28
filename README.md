@@ -23,7 +23,9 @@ Albedo texture의 경우보다 normal texture에서 이런 증상이 두드러�
 ## Scene List  
 Roby scene은 로비 구현에 필요한 연출과 shader 예제를 제공하고 있습니다.  
 Animation type은 Generic으로 mechanim으로 구성되어 있습니다.  
-### Roby Scene  
+  
+### Roby Scene
+----------------------------  
 #### FPS Counter & information display  
 ![image](https://user-images.githubusercontent.com/33303599/135036207-4f35c27e-f50f-43a0-8613-7cae79fe5447.png)  
 - Frame Rate Counter : 화면 왼측 상단에는 현재 Frame Rate에 대한 정보를 밀리세컨(millisecond, ms)과 프레임으로 표시되고 있습니다.   
@@ -40,6 +42,7 @@ Scene에 CinemachineVirtualCamera를 배치하면 카메라는 해당 버추얼 
 ![image](https://user-images.githubusercontent.com/33303599/135036388-4832901c-1a81-4774-b409-7cf06a9fcddb.png)  
   - 3번 카메라 : 스킬 CM Skill Shot  
 ![image](https://user-images.githubusercontent.com/33303599/135036409-f38029eb-bc78-4f36-adfe-bf6bea23f073.png)  
+  
 ### Realtime Reflection   
 Render texture와 shader custom을 통한 실시간 reflection을 구현한 예제입니다.  
 ![image](https://user-images.githubusercontent.com/33303599/135037058-8404b58e-22da-416d-8b07-d5ac64934cdd.png)  
@@ -49,14 +52,17 @@ Render texture와 shader custom을 통한 실시간 reflection을 구현한 예�
 - Clip Plane Offset : 반사되는 이미지의 시작점을 설정  
 - Reflect Layer : 반사를 적용할 오브젝트 레이어를 선택  
 ![image](https://user-images.githubusercontent.com/33303599/135055375-924ad498-233b-49e2-8f61-a0bd33d605bd.png)  
-
+  
 ### PBR Custom Shader(Shader Graph)  
+----------------------------  
 ![image](https://user-images.githubusercontent.com/33303599/135037941-8754a264-e9e6-4da9-8fea-2e8f9122cf58.png)  
 kaya에 쓰이는 기본 shader는 URP Lit shader를 기반으로 shader graph에서 제작한 셰이더가 쓰이고 있습니다.   
 하나의 캐릭터 금속, 천, 가죽등 다양한 재질을 표현하기 위해 캐릭터 컨셉에서부터 이런 점을 고려하여 진행하였습니다.   
 ![image](https://user-images.githubusercontent.com/33303599/135037221-a71e5a9c-e64d-4b04-8676-1d02244c96b5.png)  
 - Shader Graph를 사용해서 Lit shader의 metallic과 smoothness, AO를 하나의 mask texture로 사용하게 되었으며, smoothness 값은 remap으로 처리하고 있습니다.  
+  
 ### hair shader(Shader Graph)  
+----------------------------  
 #### UTKTemplate/URPHairKajiyaKay  
 ![kaya01](https://user-images.githubusercontent.com/33303599/135043964-720a90af-bb83-41bd-9098-7a3aa19708a4.gif)  
 - HLSL code based shader  
@@ -66,7 +72,9 @@ kaya에 쓰이는 기본 shader는 URP Lit shader를 기반으로 shader graph�
 ![image](https://user-images.githubusercontent.com/33303599/133017036-204d8e9f-37df-4ab0-a27d-8dcfbeb42e26.png)  
 #### Shader Graphs/KajiyaKay  
 ![image](https://user-images.githubusercontent.com/33303599/135035913-072f97b9-72f3-400d-a64a-bfa81719d604.png)  
-### Skin shader(Shader Graph)   
+  
+### Skin shader(Shader Graph)  
+----------------------------  
 
 
 [URP 11.0]: https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@11.0/changelog/CHANGELOG.html
