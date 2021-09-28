@@ -87,9 +87,9 @@ kaya에 쓰이는 기본 shader는 URP Lit shader를 기반으로 shader graph�
 
 ![image](https://user-images.githubusercontent.com/33303599/134872854-e1a29da4-b938-4a00-b0ee-827cfc9a5185.png)
 
-- Albedo(RGB)(A) : Albedo color는 RGB, Alpha영역은 Alpha channel을 사용합니다.
-- Normal Intensity : Normal
+- Shader Graph를 사용해서 Lit shader의 metallic과 smoothness, AO를 하나의 mask texture로 사용하게 되었으며, smoothness 값은 remap으로 처리하고 있습니다.
 
+![image](https://user-images.githubusercontent.com/33303599/135035193-b32e6548-ee44-43e4-abbd-c1f596e40084.png)
 
 
 ### hair shader(Shader Graph)
@@ -104,6 +104,12 @@ kaya에 쓰이는 기본 shader는 URP Lit shader를 기반으로 shader graph�
 - supported speucular shiftmap
 
 ![image](https://user-images.githubusercontent.com/33303599/133017036-204d8e9f-37df-4ab0-a27d-8dcfbeb42e26.png)
+
+#### Shader Graphs/KajiyaKay
+
+![image](https://user-images.githubusercontent.com/33303599/135035913-072f97b9-72f3-400d-a64a-bfa81719d604.png)
+
+
 
 ### Skin shader(Shader Graph)
 -------------------------------
