@@ -49,10 +49,9 @@ kaya에 쓰이는 기본 shader는 URP Lit shader를 기반으로 shader graph�
 하나의 캐릭터 금속, 천, 가죽등 다양한 재질을 표현하기 위해 캐릭터 컨셉에서부터 이런 점을 고려하여 진행하였습니다.   
 ![image](https://user-images.githubusercontent.com/33303599/135037221-a71e5a9c-e64d-4b04-8676-1d02244c96b5.png)  
 - Shader Graph를 사용해서 Lit shader의 metallic과 smoothness, AO를 하나의 mask texture로 사용하게 되었으며, smoothness 값은 remap으로 처리하고 있습니다.  
-![image](https://user-images.githubusercontent.com/33303599/135035193-b32e6548-ee44-43e4-abbd-c1f596e40084.png)  
 ### hair shader(Shader Graph)  
 #### UTKTemplate/URPHairKajiyaKay  
-![kaya01](https://user-images.githubusercontent.com/33303599/133038253-0d4a0aa0-c172-4540-a75c-4569732005a7.gif)  
+![kaya01](https://user-images.githubusercontent.com/33303599/135043964-720a90af-bb83-41bd-9098-7a3aa19708a4.gif)  
 - HLSL code based shader  
 - supported flowmap UV(does not need to vertical wrapped UVs)  
 - supported additional light & additional light shadow  
