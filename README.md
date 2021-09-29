@@ -59,7 +59,10 @@ Render texture와 shader custom을 통한 실시간 reflection을 구현한 예�
 kaya에 쓰이는 기본 shader는 URP Lit shader를 기반으로 shader graph에서 제작한 셰이더가 쓰이고 있습니다.   
 하나의 캐릭터 금속, 천, 가죽등 다양한 재질을 표현하기 위해 캐릭터 컨셉에서부터 이런 점을 고려하여 진행하였습니다.   
 ![image](https://user-images.githubusercontent.com/33303599/135037221-a71e5a9c-e64d-4b04-8676-1d02244c96b5.png)  
-Shader Graph를 사용해서 Lit shader의 metallic과 smoothness, AO를 하나의 mask texture로 사용하게 되었으며, smoothness 값은 remap으로 처리하고 있습니다. 자세한 내용은 [Universal Rendering Examples]에서 확인할 수 있습니다.  
+Shader Graph를 사용해서 Lit shader의 metallic과 smoothness, AO를 하나의 mask texture로 사용하게 되었으며, smoothness 값은 remap으로 처리하고 있습니다. 
+### Character Object Overdraw(Shader Graph)  
+![image](https://user-images.githubusercontent.com/33303599/135214608-f9313255-e593-4655-ad54-d332d7f6131d.png)  
+캐릭터가 오브젝트에 겹쳐질때의 표시는 Renderer의 Render Features를 사용해 구현했습니다. 자세한 내용은 [Universal Rendering Examples]에서 확인할 수 있습니다.  
 ![image](https://user-images.githubusercontent.com/33303599/135214183-fefdd1a7-21a5-4495-8a4a-7bc37aa61c8a.png)  
 Character Layer만 그리지 않고 Dither를 Depth Test후 opaque를 그린뒤(AfterRenderingOpaques) 나머지를 그리게 설정되어 있습니다.  
   
