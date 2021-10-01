@@ -53,8 +53,6 @@ Render texture와 shader custom을 통한 실시간 reflection을 구현한 예�
 - Clip Plane Offset : 반사되는 이미지의 시작점을 설정  
 - Reflect Layer : 반사를 적용할 오브젝트 레이어를 선택  
 ![image](https://user-images.githubusercontent.com/33303599/135055375-924ad498-233b-49e2-8f61-a0bd33d605bd.png)  
-### OverLapping Character Draw   
-오브젝트에 의해 가려지는 캐릭터는 Renderer setting에서 Render Features로 제어하고 있습니다. 자세한 
 ### PBR Custom Shader(Shader Graph)  
 ----------------------------  
 ![image](https://user-images.githubusercontent.com/33303599/135037941-8754a264-e9e6-4da9-8fea-2e8f9122cf58.png)  
@@ -66,25 +64,29 @@ Shader Graph를 사용해서 Lit shader의 metallic과 smoothness, AO를 하나�
 ![image](https://user-images.githubusercontent.com/33303599/135214608-f9313255-e593-4655-ad54-d332d7f6131d.png)  
 캐릭터가 오브젝트에 겹쳐질때의 표시는 Renderer의 Render Features를 사용해 구현했습니다. 자세한 내용은 [Universal Rendering Examples]에서 확인할 수 있습니다.  
 ![image](https://user-images.githubusercontent.com/33303599/135214183-fefdd1a7-21a5-4495-8a4a-7bc37aa61c8a.png)  
-Character Layer만 그리지 않고 Dither를 Depth Test후 opaque를 그린뒤(AfterRenderingOpaques) 나머지를 그리게 설정되어 있습니다.  
-  
+Character Layer만 그리지 않고 Dither를 Depth Test후 opaque를 그린뒤(AfterRenderingOpaques) 나머지를 그리게 설정되어 있습니다.    
 ### Hair shader(Shader Graph)  
 ----------------------------  
 #### UTKTemplate/URPHairKajiyaKay  
 ![kaya01](https://user-images.githubusercontent.com/33303599/135043964-720a90af-bb83-41bd-9098-7a3aa19708a4.gif)  
 헤어셰이더에서 많이 사용되는 UV를 세로로 펴지 사용하는 방식이 아닌 flowmap을 사용해 라이팅을 구현한 예제입니다. flowmap으로 헤어의 방향을 기록하고 shiftmap으로 하이라이트의 위치를 조절할 수 있습니다.  
 ![image](https://user-images.githubusercontent.com/33303599/135210745-9b72bdbd-8b5c-42cc-a09d-ad57b835b5cd.png)  
+이 셰이더는 addlight, addlightshadow 까지 모두 지원합니다.  
+![image](https://user-images.githubusercontent.com/33303599/135621510-8b926e2d-83ca-4cbc-b82d-a4bfa012e39e.png)
+
 #### Shader Graphs/KajiyaKay  
 ![image](https://user-images.githubusercontent.com/33303599/135035913-072f97b9-72f3-400d-a64a-bfa81719d604.png)  
 위방식과 다르게 Shader Graph로 작성되어있으며, 두개의 하이라이트를 조절해 헤어의 하이라이트를 표현하는 방식입니다.   
-
 ### Skin shader(Shader Graph)  
 ----------------------------  
 ![image](https://user-images.githubusercontent.com/33303599/135212110-1222b0f1-c557-459e-9482-8476a8f20156.png)  
 SSS(SubSurface Scattering)의 구현은 Shader Graph를 사용해 구현되었습니다. Skin Texture의 Alpha Channel이 Thickness map으로 사용됩니다.  
 
 ## Animation Setting  
-Animation Setting은 Generic을 사용하고 있습니다. 유니티의 Humanoid는 애니메이션 리타겟팅을 목적으로 하지 않는 경우를 제외하고는 권장하지 않습니다. 제너릭과 휴머노이드의 최적화 관련 문서는 [unity forum]의 문서를 참조하세요.  
+### Rig Setting  
+Animation Setting은 Generic을 사용하고 있습니다. 유니티의 Humanoid는 애니메이션 리타겟팅을 목적으로 하지 않는 경우를 제외하고는 권장하지 않습니다. 제너릭과 휴머노이드의 최적화 관련 문서는 [unity forum]의 문서를 참조하세요.캐릭터의 Rig setting은 Model의 optimize Game Objects를 클릭해 성능을 높이며, 사용하는 무기 슬롯만 하이라키에 노출하게 됩니다([Extra Transforms to Expose])  
+![image](https://user-images.githubusercontent.com/33303599/135617460-a70c9de6-0e69-4b8a-8f11-cb494fe125c8.png)
+
 
 
 
@@ -96,3 +98,4 @@ Animation Setting은 Generic을 사용하고 있습니다. 유니티의 Humanoid
 [ASTC]: https://en.wikipedia.org/wiki/Adaptive_scalable_texture_compression
 [Universal Rendering Examples]: https://github.com/Unity-Technologies/UniversalRenderingExamples
 [unity forum]: https://forum.unity.com/threads/using-humanoid-rigs-in-2020.923771/
+[Extra Transforms to Expose]: https://docs.unity3d.com/kr/2019.4/Manual/FBXImporter-Rig.html
