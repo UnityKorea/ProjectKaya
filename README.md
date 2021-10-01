@@ -1,7 +1,9 @@
 
 # ProjectKaya  
 ![image](https://user-images.githubusercontent.com/33303599/132323335-2ffb8e2c-600a-4672-8a60-14c312b16aeb.png)  
-프로젝트 카야는 유니티 코리아에서 진행하는 URP를 활용한 모바일 예제 프로젝트 입니다. 공개된 repository는 지속적으로 업데이트 되며, 사용자가 프로젝트에 기여하는 것도 가능합니다.   
+프로젝트 카야는 유니티 코리아에서 진행하는 URP를 활용한 모바일 예제 프로젝트 입니다.  
+공개된 repository는 지속적으로 업데이트 되며, 사용자가 프로젝트에 기여하는 것도 가능합니다.   
+Mobile Platform을 위한 추가적인 최적화는 [모바일 게임 성능 최적화 01] [모바일 게임 성능 최적화 02] 문서를 참고하시기 바랍니다.   
 Project Kaya is a mobile example project for using Unity URP by Unity Technologies Korea.  
 ## Requirement  
 - Unity 2021.1.13f1(Android module required)  
@@ -81,6 +83,16 @@ Character Layer만 그리지 않고 Dither를 Depth Test후 opaque를 그린뒤(
 ![image](https://user-images.githubusercontent.com/33303599/135212110-1222b0f1-c557-459e-9482-8476a8f20156.png)  
 SSS(SubSurface Scattering)의 구현은 Shader Graph를 사용해 구현되었습니다. Skin Texture의 Alpha Channel이 Thickness map으로 사용됩니다.  
 
+## Animation Setting  
+Animation Setting은 Generic을 사용하고 있습니다. 유니티의 Humanoid는 애니메이션 리타겟팅을 목적으로 하지 않는 경우를 제외하고는 권장하지 않습니다. 제너릭과 휴머노이드의 최적화 관련 문서는 [unity forum]의 문서를 참조하세요.  
+
+
+
+
+
+[모바일 게임 성능 최적화01]: https://blog.unity.com/kr/technology/optimize-your-mobile-game-performance-tips-on-profiling-memory-and-code-architecture
+[모바일 게임 성능 최적화02]: https://blog.unity.com/kr/technology/optimize-your-mobile-game-performance-get-expert-tips-on-physics-ui-and-audio-settings
 [URP 11.0]: https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@11.0/changelog/CHANGELOG.html
 [ASTC]: https://en.wikipedia.org/wiki/Adaptive_scalable_texture_compression
 [Universal Rendering Examples]: https://github.com/Unity-Technologies/UniversalRenderingExamples
+[unity forum]: https://forum.unity.com/threads/using-humanoid-rigs-in-2020.923771/
