@@ -72,7 +72,7 @@ Character Layer만 그리지 않고 Dither를 Depth Test후 opaque를 그린뒤(
 헤어셰이더에서 많이 사용되는 UV를 세로로 펴지 사용하는 방식이 아닌 flowmap을 사용해 라이팅을 구현한 예제입니다. flowmap으로 헤어의 방향을 기록하고 shiftmap으로 하이라이트의 위치를 조절할 수 있습니다.  
 ![image](https://user-images.githubusercontent.com/33303599/135210745-9b72bdbd-8b5c-42cc-a09d-ad57b835b5cd.png)  
 이 셰이더는 addlight, addlightshadow 까지 모두 지원합니다.  
-![image](https://user-images.githubusercontent.com/33303599/135621510-8b926e2d-83ca-4cbc-b82d-a4bfa012e39e.png)
+![image](https://user-images.githubusercontent.com/33303599/135622097-206fa0f1-13c3-466b-a318-89e962469bad.png)  
 
 #### Shader Graphs/KajiyaKay  
 ![image](https://user-images.githubusercontent.com/33303599/135035913-072f97b9-72f3-400d-a64a-bfa81719d604.png)  
