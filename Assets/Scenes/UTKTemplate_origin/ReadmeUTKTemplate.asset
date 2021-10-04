@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcf7219bab7fe46a1ad266029b2fee19, type: 3}
+  m_Name: ReadmeUTKTemplate
+  m_EditorClassIdentifier: 
+  icon: {fileID: 2800000, guid: 0361953f956185c458516797cf650d10, type: 3}
+  iconMaxWidth: 192
+  title: "Scene\uC5F0\uCD9C"
+  sections:
+  - heading: "Camera \uC5F0\uCD9C"
+    text: "\uCE74\uBA54\uB77C\uB294 Cinemachine\uC744 \uC0AC\uC6A9\uD574 \uCE74\uBA54\uB77C\uAC04
+      \uC804\uD658 \uC5F0\uCD9C\uC744 \uC0AC\uC6A9\uD558\uACE0 \uC788\uC2B5\uB2C8\uB2E4.
+      \uBCC4\uB3C4\uC758 \uC560\uB2C8\uBA54\uC774\uC158 \uC791\uC5C5\uC774 \uC5C6\uB354\uB77C\uB3C4
+      \uCE74\uBA54\uB77C \uD3EC\uC9C0\uC158\uC758 \uC6B0\uC120 \uC21C\uC704\uB97C
+      UI\uC5D0\uC11C \uBC14\uAFD4\uC90C\uC73C\uB85C \uAC01 \uCE74\uBA54\uB77C \uD3EC\uC9C0\uC158\uBCC4
+      \uC5F0\uCD9C\uC774 \uC801\uC6A9\uB429\uB2C8\uB2E4."
+    linkText: 
+    url: 
+  - heading: PostProcessing
+    text: "Post Processing\uC740 Global volume \uC774\uC678\uC5D0 \uCD94\uAC00 \uBCFC\uB968\uC740
+      local volume\uC744 \uC0AC\uC6A9\uD558\uC9C0 \uC54A\uACE0 \uC2DC\uB124\uBA38\uC2E0\uC5D0\uC11C
+      \uCD94\uAC00\uD558\uACE0 \uC788\uC2B5\uB2C8\uB2E4. "
+    linkText: 
+    url: 
+  loadedLayout: 0

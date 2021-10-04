@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcf7219bab7fe46a1ad266029b2fee19, type: 3}
+  m_Name: Readme
+  m_EditorClassIdentifier: 
+  icon: {fileID: 2800000, guid: 979788e11f5e92c4596d585abf090081, type: 3}
+  iconMaxWidth: 128
+  title: Project Kaya
+  sections:
+  - heading: Project Kaya
+    text: UTK Template Project Kaya. All right reserved by Unity Technologies
+    linkText: 
+    url: 
+  - heading: Requirement
+    text: "Graphics API\uB294 Vulkan\uC744 \uAE30\uBCF8\uC73C\uB85C \uC14B\uD305\uB418\uC5B4
+      \uC788\uC2B5\uB2C8\uB2E4. OpenGL ES 3.2\uB294 \uD604\uC7AC \uC9C0\uC6D0\uD558\uC9C0
+      \uC54A\uACE0 \uC788\uC2B5\uB2C8\uB2E4."
+    linkText: 
+    url: 
+  - heading: Resolution Setting
+    text: "Mobile\uC5D0\uC11C Target DPI\uB294 300\uC744 \uAE30\uBCF8\uC73C\uB85C
+      \uC14B\uD305\uB418\uC5B4 \uC788\uC2B5\uB2C8\uB2E4. \uC774\uC640 \uAD00\uB828\uD55C
+      \uC790\uC138\uD55C \uB0B4\uC6A9\uC740 \uC544\uB798 \uB9C1\uD06C\uB97C \uCC38\uACE0\uD574\uC8FC\uC138\uC694"
+    linkText: Android PlayerSetting
+    url: https://docs.unity3d.com/kr/2020.1/Manual/class-PlayerSettingsAndroid.html
+  loadedLayout: 0

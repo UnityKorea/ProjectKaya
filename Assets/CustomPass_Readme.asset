@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcf7219bab7fe46a1ad266029b2fee19, type: 3}
+  m_Name: CustomPass_Readme
+  m_EditorClassIdentifier: 
+  icon: {fileID: 2800000, guid: 0361953f956185c458516797cf650d10, type: 3}
+  iconMaxWidth: 192
+  title: URP CustomPass
+  sections:
+  - heading: Custom Pass in URP
+    text: "URP\uC5D0\uC11C\uB294 \uB808\uAC70\uC2DC\uC640 \uB2EC\uB9AC stencil buffer\uB97C
+      \uD65C\uC6A9\uD558\uAC70\uB098 2pass\uB85C \uB9CC\uB4E4\uC5C8\uB358 \uC170\uC774\uB354
+      \uD6A8\uACFC\uB97C custom pass\uB97C \uD1B5\uD574 \uC190\uC27D\uAC8C \uAD6C\uD604\uD560
+      \uC218 \uC788\uC2B5\uB2C8\uB2E4."
+    linkText: Custom Render Passes with URP
+    url: https://learn.unity.com/tutorial/custom-render-passes-with-urp?_ga=2.14277491.55513342.1602502190-625028359.1508728877#
+  loadedLayout: 0
