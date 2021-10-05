@@ -95,6 +95,15 @@ SSS(SubSurface Scattering)의 구현은 Shader Graph를 사용해 구현되었�
 Animation Setting은 Generic을 사용하고 있습니다. 유니티의 Humanoid는 애니메이션 리타겟팅을 목적으로 하지 않는 경우를 제외하고는 권장하지 않습니다. 제너릭과 휴머노이드의 최적화 관련 문서는 [unity forum]의 문서를 참조하세요.캐릭터의 Rig setting은 Model의 optimize Game Objects를 클릭해 성능을 높이며, 사용하는 무기 슬롯만 하이라키에 노출하게 됩니다([Extra Transforms to Expose])  
 ![image](https://user-images.githubusercontent.com/33303599/135617460-a70c9de6-0e69-4b8a-8f11-cb494fe125c8.png)
 
+## VFX Setting  
+### Scene VFX  
+![image](https://user-images.githubusercontent.com/33303599/135985372-e6a9ae89-7907-4b0b-bd9b-ffcd4034c27b.png)  
+배경에 쓰인 VFX Graph는 낮에는 벛꽃, 밤에는 불씨가 흩날리며 추가로 밤엔 불길을 VFX Graph로 구현했습니다.  
+![image](https://user-images.githubusercontent.com/33303599/135985065-82e2c403-974b-447e-bf15-e31b071c8016.png)  
+ 
+### Character VFX  
+캐릭터 1번과 2번 슬롯의 스킬에는 캐릭터 이펙트가 붙어있습니다. 이 이펙트는 shuriken이 아닌 Visual effect graph로 제작되어 있습니다.  
+![UTKTemplate01_skillv1_2](https://user-images.githubusercontent.com/33303599/135989136-05aa2d9a-1fac-4862-8bc4-4774f8c9c989.gif)  
 
 
 
