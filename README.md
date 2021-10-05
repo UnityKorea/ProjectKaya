@@ -4,12 +4,20 @@
 프로젝트 카야는 유니티 코리아에서 진행하는 URP를 활용한 모바일 예제 프로젝트 입니다.  
 공개된 repository는 지속적으로 업데이트 되며, 사용자가 프로젝트에 기여하는 것도 가능합니다.   
 Mobile Platform을 위한 추가적인 최적화는 [모바일 게임 성능 최적화 01] [모바일 게임 성능 최적화 02] 문서를 참고하시기 바랍니다.   
-Project Kaya is a mobile example project for using Unity URP by Unity Technologies Korea.  
+
+
+프로젝트에 대한 보다 많은 정보는 [Unity Webinar]와 [UniteSeoul 2020 Session] 영상을 참고 바랍니다.  
+  
+![image](https://user-images.githubusercontent.com/33303599/135978553-f5b8648a-67fc-4119-9fb1-3b5f850b86e3.png)  
+
+###### Project Kaya는 Unity Technologies Korea의 URP 모바일 플랫폼을 사용하는 Unity 사용자를 위한 예시 프로젝트입니다. 유니티 프로젝트 내에서 본 프로젝트의 자원을 상업적/비 상업적으로 사용하는 것은 허용되지만 재배포는 허용되지 않습니다. 이 프로젝트의 저작권은 유니티코리아에 있습니다.   
+###### Project Kaya is an example project for unity users using  URP mobile platform from Unity Technologies Korea. Commercial/non-commercial use of this project's resources is permitted in the unity project, but redistribution is not permitted. All right reserved by copyrights of this project belong to Unity Korea.  
+
 ## Requirement  
 - Unity 2021.1.13f1(Android module required)  
 - [URP 11.0] version needed  
 - Android Platform  
-- Vulkan API supported  
+- Vulkan API supported(Visual Effect Graph를 사용하지 않는다면 ES 3.0이상)  
 ### editor setting  
 ![image](https://user-images.githubusercontent.com/33303599/133048003-a38cb6cf-04b7-4670-833d-cf9ecd193a22.png)  
 Kaya project는 android 플랫폼을 기준으로 작업되고 있습니다. 이를 위해서 editor를 이와 같은 환경으로 셋팅해주어야 합니다. 커맨드라인 인자 추가에 -force-vulkan을 입력해 vulkan api로 동작하도록 설정합니다.   
@@ -92,10 +100,13 @@ Animation Setting은 Generic을 사용하고 있습니다. 유니티의 Humanoid
 
 
 
-[모바일 게임 성능 최적화01]: https://blog.unity.com/kr/technology/optimize-your-mobile-game-performance-tips-on-profiling-memory-and-code-architecture
-[모바일 게임 성능 최적화02]: https://blog.unity.com/kr/technology/optimize-your-mobile-game-performance-get-expert-tips-on-physics-ui-and-audio-settings
-[URP 11.0]: https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@11.0/changelog/CHANGELOG.html
-[ASTC]: https://en.wikipedia.org/wiki/Adaptive_scalable_texture_compression
-[Universal Rendering Examples]: https://github.com/Unity-Technologies/UniversalRenderingExamples
-[unity forum]: https://forum.unity.com/threads/using-humanoid-rigs-in-2020.923771/
+---------------------------------------
+[모바일 게임 성능 최적화 01]: https://blog.unity.com/kr/technology/optimize-your-mobile-game-performance-tips-on-profiling-memory-and-code-architecture  
+[모바일 게임 성능 최적화 02]: https://blog.unity.com/kr/technology/optimize-your-mobile-game-performance-get-expert-tips-on-physics-ui-and-audio-settings  
+[Unity Webinar]: https://youtu.be/QqTeElxbTA0  
+[UniteSeoul 2020 Session]: https://youtu.be/SJBRPsziteQ  
+[URP 11.0]: https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@11.0/changelog/CHANGELOG.html  
+[ASTC]: https://en.wikipedia.org/wiki/Adaptive_scalable_texture_compression  
+[Universal Rendering Examples]: https://github.com/Unity-Technologies/UniversalRenderingExamples  
+[unity forum]: https://forum.unity.com/threads/using-humanoid-rigs-in-2020.923771/  
 [Extra Transforms to Expose]: https://docs.unity3d.com/kr/2019.4/Manual/FBXImporter-Rig.html
