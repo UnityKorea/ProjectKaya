@@ -24,7 +24,13 @@ Kaya project는 android 플랫폼을 기준으로 작업되고 있습니다. 이
 ![image](https://user-images.githubusercontent.com/33303599/135035994-c7b63346-3e73-4d49-8b49-49caabd6894d.png)  
 플랫폼을 android로 선택합니다(에디터 설치시에 android 모듈이 설치되어야 합니다  
 ![image](https://user-images.githubusercontent.com/33303599/135036095-4d0c0222-89cc-43b0-83fc-aed965a11a69.png)  
-## Resource Compression  
+## Project Setting  
+### Renderer setting
+#### MSAA  
+모바일 프로젝트에서 사용하는 MSAA 옵션은 프로젝트 상황에 따라 적절하게 조절해주는것이 좋습니다. 아래는 MSAA 샘플링 수에 따른 메시 외곽의 퀄리티 비교입니다. quality setting이 Low, medium, high에 따라 아래와 같이 변경됩니다.  
+![image](https://user-images.githubusercontent.com/33303599/136010444-07b126f3-a70b-4381-a52b-fcd8630167af.png)  
+
+### Resource Compression  
 대부분의 Texture compression은 [ASTC] 를 사용하고 있습니다.  
 일부 리소스의 경우 압축하지 않은 RGB24 혹은 RGBA32입니다.  
 ![image](https://user-images.githubusercontent.com/33303599/132826800-5ec62cdb-d038-4847-9660-ad9879a9b69d.png)  
@@ -103,9 +109,9 @@ Animation Setting은 Generic을 사용하고 있습니다. 유니티의 Humanoid
  
 ### Character VFX  
 캐릭터 1번과 2번 슬롯의 스킬에는 캐릭터 이펙트가 붙어있습니다. 이 이펙트는 shuriken이 아닌 Visual effect graph로 제작되어 있습니다.  
-![UTKTemplate01_skillv1_2](https://user-images.githubusercontent.com/33303599/135989136-05aa2d9a-1fac-4862-8bc4-4774f8c9c989.gif)  
-
-
+![UTKTemplate01_skillv1_3](https://user-images.githubusercontent.com/33303599/136010021-6196df85-12ec-4765-9d62-9077d0dedc6f.gif)  
+OpenGL ES 3.2에서도 제대로 출력되지 않는 부분들이 있습니다.   
+![image](https://user-images.githubusercontent.com/33303599/136010929-f6f3b48a-4321-427a-87ba-a6e988217300.png)
 
 
 
