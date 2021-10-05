@@ -20,7 +20,7 @@ public class DemoController : MonoBehaviour
 		    systemInformation += $"Device : {SystemInfo.graphicsDeviceType}\n";
 		    systemInformation += $"GPU : {SystemInfo.graphicsDeviceName}\n";
 		    systemInformation += $"API : {SystemInfo.graphicsDeviceVersion}\n";
-		    systemInformation += $"Screen Resolution : {Screen.currentResolution}\n";
+		    systemInformation += $"Screen Resolution : {Screen.width} x {Screen.height}\n";
 		    if (frameChecker)
 			    systemInformation += frameChecker.fpsText;
 		    label.text = systemInformation;
