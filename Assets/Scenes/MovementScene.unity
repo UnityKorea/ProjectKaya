@@ -7917,7 +7917,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7775031, y: 1}
+    m_SensorSize: {x: 2, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -8348,26 +8348,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: UI Input - Canvas
       objectReference: {fileID: 0}
-    - target: {fileID: 1152875107971556525, guid: cb0a80b6b01b4ba46addc223456b9c29,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4880632638105838820, guid: cb0a80b6b01b4ba46addc223456b9c29,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5315675819054264088, guid: cb0a80b6b01b4ba46addc223456b9c29,
         type: 3}
       propertyPath: planarReflections
       value: 
       objectReference: {fileID: 566934456}
-    - target: {fileID: 7655831756229651151, guid: cb0a80b6b01b4ba46addc223456b9c29,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cb0a80b6b01b4ba46addc223456b9c29, type: 3}
 --- !u!1 &732391236388323272 stripped
