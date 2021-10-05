@@ -19,6 +19,8 @@ public class PlayerController : MonoBehaviour
 	public float SpeedChangeRate = 10.0f;
 	
 	public float CurrentSpeed;
+
+	public bool AlwaysRun;
 	
     #region Privates
     private Rigidbody _rigidbody;
@@ -58,7 +60,7 @@ public class PlayerController : MonoBehaviour
     private void Move()
 		{
 			// set target speed based on move speed, sprint speed and if sprint is pressed
-			float targetSpeed = _sprint ? SprintSpeed : MoveSpeed;
+			var targetSpeed = (_sprint || AlwaysRun) ? SprintSpeed : MoveSpeed;
 
 			// a simplistic acceleration and deceleration designed to be easy to remove, replace, or iterate upon
 

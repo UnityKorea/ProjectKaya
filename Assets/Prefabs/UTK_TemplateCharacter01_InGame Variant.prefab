@@ -152,6 +152,7 @@ MonoBehaviour:
   RotationSmoothTime: 0.12
   SpeedChangeRate: 5
   CurrentSpeed: 0
+  AlwaysRun: 1
 --- !u!114 &4880005375494897092
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -277,6 +278,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -0.125
       objectReference: {fileID: 0}
+    - target: {fileID: 3064224460517719620, guid: dcfb1d8e09c776c479e4a6b044c3c797,
+        type: 3}
+      propertyPath: m_Materials.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: 44372f392fb428a45ad3b22678a84e62, type: 2}
     - target: {fileID: 4181941757442866866, guid: dcfb1d8e09c776c479e4a6b044c3c797,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
