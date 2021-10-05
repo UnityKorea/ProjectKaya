@@ -26,7 +26,7 @@ Kaya project는 android 플랫폼을 기준으로 작업되고 있습니다. 이
 ![image](https://user-images.githubusercontent.com/33303599/135036095-4d0c0222-89cc-43b0-83fc-aed965a11a69.png)  
 ## Project Setting  
 ### Renderer setting
-#### MSAA  
+#### Anti Aliasing  
 모바일 프로젝트에서 사용하는 MSAA 옵션은 프로젝트 상황에 따라 적절하게 조절해주는것이 좋습니다. 아래는 MSAA 샘플링 수에 따른 메시 외곽의 퀄리티 비교입니다. quality setting이 Low, medium, high에 따라 아래와 같이 변경됩니다.  
 ![image](https://user-images.githubusercontent.com/33303599/136010444-07b126f3-a70b-4381-a52b-fcd8630167af.png)  
 
@@ -84,6 +84,9 @@ Character Layer만 그리지 않고 Dither를 Depth Test후 opaque를 그린뒤(
 #### UTKTemplate/URPHairKajiyaKay  
 ![kaya01](https://user-images.githubusercontent.com/33303599/135043964-720a90af-bb83-41bd-9098-7a3aa19708a4.gif)  
 헤어셰이더에서 많이 사용되는 UV를 세로로 펴지 사용하는 방식이 아닌 flowmap을 사용해 라이팅을 구현한 예제입니다. flowmap으로 헤어의 방향을 기록하고 shiftmap으로 하이라이트의 위치를 조절할 수 있습니다.  
+flowmap은 후디니에서 LabsFlowmap 노드를 사용해서 머리카락의 방향대로 vector을 정하고 그걸 렌더링해서 사용했습니다.  
+![image](https://user-images.githubusercontent.com/33303599/136017237-c981c3e8-aeb5-4ce5-b97c-c34bcd50a6ca.png)  
+사용시에 텍스쳐의 sRGB옵션(Gamma correction)을 끄고 사용해야 합니다.
 ![image](https://user-images.githubusercontent.com/33303599/135210745-9b72bdbd-8b5c-42cc-a09d-ad57b835b5cd.png)  
 이 셰이더는 addlight, addlightshadow 까지 모두 지원합니다.  
 ![image](https://user-images.githubusercontent.com/33303599/135622097-206fa0f1-13c3-466b-a318-89e962469bad.png)  
@@ -100,6 +103,7 @@ SSS(SubSurface Scattering)의 구현은 Shader Graph를 사용해 구현되었�
 ### Rig Setting  
 Animation Setting은 Generic을 사용하고 있습니다. 유니티의 Humanoid는 애니메이션 리타겟팅을 목적으로 하지 않는 경우를 제외하고는 권장하지 않습니다. 제너릭과 휴머노이드의 최적화 관련 문서는 [unity forum]의 문서를 참조하세요.캐릭터의 Rig setting은 Model의 optimize Game Objects를 클릭해 성능을 높이며, 사용하는 무기 슬롯만 하이라키에 노출하게 됩니다([Extra Transforms to Expose])  
 ![image](https://user-images.githubusercontent.com/33303599/135617460-a70c9de6-0e69-4b8a-8f11-cb494fe125c8.png)
+본의 갯수는 88개 입니다.  
 
 ## VFX Setting  
 ### Scene VFX  
@@ -113,8 +117,8 @@ Animation Setting은 Generic을 사용하고 있습니다. 유니티의 Humanoid
 실제 모바일 빌드시 OpenGL ES 3.2 환경에서도 제대로 출력되지 않는 부분들이 있습니다.(vulkan 권장)  
 ![image](https://user-images.githubusercontent.com/33303599/136010929-f6f3b48a-4321-427a-87ba-a6e988217300.png)
 
-
 ---------------------------------------
+![UTK_LobyEffectcherry_re](https://user-images.githubusercontent.com/33303599/136016992-ab0e663d-e509-4ea1-9cde-6b0d82bd3ce5.gif)  
 ** Unity Technologies Korea Evangelism dev 2021
 
 
