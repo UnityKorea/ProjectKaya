@@ -17,9 +17,11 @@ public class SettingsMenu : MonoBehaviour
     public PlanarReflections planarReflections;
     
     private Resolution[] _resolutions;
+    private int[] _targetFrameRates;
     
     private void Start()
     {
+        _targetFrameRates = new[] { 60, 40, 30, 20 };
         _resolutions = Screen.resolutions;
         resolutionDropdown.ClearOptions();
         
@@ -37,7 +39,7 @@ public class SettingsMenu : MonoBehaviour
         resolutionDropdown.value = currentResolutionIndex;
         resolutionDropdown.RefreshShownValue();
 
-        float volumeValue;
+        var volumeValue = 0f;
         audioMixer.GetFloat("volume", out volumeValue);
         volumeSlider.value = (volumeValue+80f)/100f;
         fullscreenToggle.isOn = Screen.fullScreen;
@@ -45,13 +47,18 @@ public class SettingsMenu : MonoBehaviour
 
     public void SetResolution(int resolutionIndex)
     {
-        Resolution resolution = _resolutions[resolutionIndex];
+        var resolution = _resolutions[resolutionIndex];
         Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
     }
 
     public void SetVolume(float volume)
     {
         audioMixer.SetFloat("volume", volume * 100f - 80f);
+    }
+
+    public void SetFPS(int fpsIndex)
+    {
+        Application.targetFrameRate = _targetFrameRates[fpsIndex];
     }
 
     public void SetQuality(int qualityIndex)

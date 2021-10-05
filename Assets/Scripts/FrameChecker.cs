@@ -23,7 +23,7 @@ public class FrameChecker : MonoBehaviour
 
         _style = new GUIStyle();
         _style.alignment = TextAnchor.UpperLeft;
-        _style.fontSize = h * 4 / 100;
+        _style.fontSize = h * 4 / 130;
         _style.normal.textColor = Color.cyan;
 
         StartCoroutine(WorstReset_Coroutine());
@@ -40,7 +40,7 @@ public class FrameChecker : MonoBehaviour
     
     private void Update()
     {
-        _deltaTime += (Time.deltaTime - _deltaTime) * 0.1f;
+        _deltaTime += (Time.unscaledDeltaTime - _deltaTime) * 0.1f;
         _msec = _deltaTime * 1000.0f;
         _fps = 1.0f / _deltaTime;
         if (_fps < _worstFps)  

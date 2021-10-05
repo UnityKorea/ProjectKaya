@@ -1258,7 +1258,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 2, y: 1}
+    m_SensorSize: {x: 1.7775031, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -1669,7 +1669,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 2, y: 1}
+    m_SensorSize: {x: 1.7775031, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -2089,7 +2089,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 2, y: 1}
+    m_SensorSize: {x: 1.7775031, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -2619,6 +2619,11 @@ PrefabInstance:
       propertyPath: animator
       value: 
       objectReference: {fileID: 1677486432}
+    - target: {fileID: 1498315206819619270, guid: 66f210095bdc84e809d9b042cab368a2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2396458760299882598, guid: 66f210095bdc84e809d9b042cab368a2,
         type: 3}
       propertyPath: animator
@@ -2804,6 +2809,16 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
       objectReference: {fileID: 2111435622}
+    - target: {fileID: 4241803466783889078, guid: 66f210095bdc84e809d9b042cab368a2,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 54.23
+      objectReference: {fileID: 0}
+    - target: {fileID: 5086966476156338286, guid: 66f210095bdc84e809d9b042cab368a2,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5412701189693776298, guid: 66f210095bdc84e809d9b042cab368a2,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -2819,6 +2834,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
       objectReference: {fileID: 810426057}
+    - target: {fileID: 5634306718774771188, guid: 66f210095bdc84e809d9b042cab368a2,
+        type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetFPS
+      objectReference: {fileID: 0}
     - target: {fileID: 6428682340346306658, guid: 66f210095bdc84e809d9b042cab368a2,
         type: 3}
       propertyPath: animator
@@ -2829,6 +2849,11 @@ PrefabInstance:
       propertyPath: animator
       value: 
       objectReference: {fileID: 1677486432}
+    - target: {fileID: 6654584846782774895, guid: 66f210095bdc84e809d9b042cab368a2,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6678053240590787460, guid: 66f210095bdc84e809d9b042cab368a2,
         type: 3}
       propertyPath: animator
@@ -2854,6 +2879,11 @@ PrefabInstance:
       propertyPath: animator
       value: 
       objectReference: {fileID: 1677486432}
+    - target: {fileID: 8816799498599006059, guid: 66f210095bdc84e809d9b042cab368a2,
+        type: 3}
+      propertyPath: m_text
+      value: 60
+      objectReference: {fileID: 0}
     - target: {fileID: 8829832583303924753, guid: 66f210095bdc84e809d9b042cab368a2,
         type: 3}
       propertyPath: skinnedMeshRenderer
