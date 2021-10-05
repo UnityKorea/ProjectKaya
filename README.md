@@ -110,12 +110,14 @@ Animation Setting은 Generic을 사용하고 있습니다. 유니티의 Humanoid
 ### Character VFX  
 캐릭터 1번과 2번 슬롯의 스킬에는 캐릭터 이펙트가 붙어있습니다. 이 이펙트는 shuriken이 아닌 Visual effect graph로 제작되어 있습니다.  
 ![UTKTemplate01_skillv1_3](https://user-images.githubusercontent.com/33303599/136010021-6196df85-12ec-4765-9d62-9077d0dedc6f.gif)  
-OpenGL ES 3.2에서도 제대로 출력되지 않는 부분들이 있습니다.   
+실제 모바일 빌드시 OpenGL ES 3.2 환경에서도 제대로 출력되지 않는 부분들이 있습니다.(vulkan 권장)  
 ![image](https://user-images.githubusercontent.com/33303599/136010929-f6f3b48a-4321-427a-87ba-a6e988217300.png)
 
 
-
 ---------------------------------------
+** Unity Technologies Korea Evangelism dev 2021
+
+
 [모바일 게임 성능 최적화 01]: https://blog.unity.com/kr/technology/optimize-your-mobile-game-performance-tips-on-profiling-memory-and-code-architecture  
 [모바일 게임 성능 최적화 02]: https://blog.unity.com/kr/technology/optimize-your-mobile-game-performance-get-expert-tips-on-physics-ui-and-audio-settings  
 [Unity Webinar]: https://youtu.be/QqTeElxbTA0  
