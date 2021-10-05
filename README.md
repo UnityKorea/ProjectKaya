@@ -86,14 +86,15 @@ Character Layer만 그리지 않고 Dither를 Depth Test후 opaque를 그린뒤(
 헤어셰이더에서 많이 사용되는 UV를 세로로 펴지 사용하는 방식이 아닌 flowmap을 사용해 라이팅을 구현한 예제입니다. flowmap으로 헤어의 방향을 기록하고 shiftmap으로 하이라이트의 위치를 조절할 수 있습니다.  
 flowmap은 후디니에서 LabsFlowmap 노드를 사용해서 머리카락의 방향대로 vector을 정하고 그걸 렌더링해서 사용했습니다.  
 ![image](https://user-images.githubusercontent.com/33303599/136017237-c981c3e8-aeb5-4ce5-b97c-c34bcd50a6ca.png)  
-사용시에 텍스쳐의 sRGB옵션(Gamma correction)을 끄고 사용해야 합니다.
-![image](https://user-images.githubusercontent.com/33303599/135210745-9b72bdbd-8b5c-42cc-a09d-ad57b835b5cd.png)  
+사용시에 텍스쳐의 sRGB옵션(Gamma correction)을 끄고 사용해야 합니다.  
+![image](https://user-images.githubusercontent.com/33303599/136018431-3f5c4b87-33bf-4c7a-9498-bbceabe878c9.png)  
+
 이 셰이더는 addlight, addlightshadow 까지 모두 지원합니다.  
 ![image](https://user-images.githubusercontent.com/33303599/135622097-206fa0f1-13c3-466b-a318-89e962469bad.png)  
-
 #### Shader Graphs/KajiyaKay  
 ![image](https://user-images.githubusercontent.com/33303599/135035913-072f97b9-72f3-400d-a64a-bfa81719d604.png)  
 위방식과 다르게 Shader Graph로 작성되어있으며, 두개의 하이라이트를 조절해 헤어의 하이라이트를 표현하는 방식입니다.   
+
 ### Skin shader(Shader Graph)  
 ----------------------------  
 ![image](https://user-images.githubusercontent.com/33303599/135212110-1222b0f1-c557-459e-9482-8476a8f20156.png)  
