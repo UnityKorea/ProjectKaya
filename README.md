@@ -50,7 +50,7 @@ Animation type은 Generic으로 mechanim으로 구성되어 있습니다.
 - Display pixel Resoultion : Rendering 되고 있는 현재 해상도를 보여줍니다.  
 - Graphics API : 현재 렌더링 되고 있는 Graphics API 정보를 보여줍니다.   
 #### Cinemachine  
-Roby Scene에서 카메라 전환은 Cinemachine을 활용해서 이루어지고 있습니다. 카메라의 Priority값을 UI에서 바꿔줌으로써 카메라간 전환이 이루어지게 됩니다.   
+Lobby Scene에서 카메라 전환은 Cinemachine을 활용해서 이루어지고 있습니다. 카메라의 Priority값을 UI에서 바꿔줌으로써 카메라간 전환이 이루어지게 됩니다.   
 ![image](https://user-images.githubusercontent.com/33303599/133052473-d765f541-a6ed-469f-b6d4-0036be3f4c18.png)  
 Scene에 CinemachineVirtualCamera를 배치하면 카메라는 해당 버추얼 카메라의 포지션으로 이동하게 됩니다.   
 ![kayaCinemachine](https://user-images.githubusercontent.com/33303599/133038603-8427de53-bc4b-4c95-b415-5661d6afb4ce.gif)  
