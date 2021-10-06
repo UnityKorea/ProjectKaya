@@ -32,7 +32,8 @@ public class ReadmeEditor : Editor {
 			
 			if (readme && !readme.loadedLayout)
 			{
-				LoadLayout();
+				// @bug : break layout.
+				// LoadLayout();
 				readme.loadedLayout = true;
 			}
 		} 
@@ -40,10 +41,18 @@ public class ReadmeEditor : Editor {
 	
 	static void LoadLayout()
 	{
-		var assembly = typeof(EditorApplication).Assembly; 
-		var windowLayoutType = assembly.GetType("UnityEditor.WindowLayout", true);
-		var method = windowLayoutType.GetMethod("LoadWindowLayout", BindingFlags.Public | BindingFlags.Static);
-		method.Invoke(null, new object[]{Path.Combine(Application.dataPath, "»Readme/Layout.wlt"), false});
+		try
+		{
+			var assembly = typeof(EditorApplication).Assembly;
+			var windowLayoutType = assembly.GetType("UnityEditor.WindowLayout", true);
+			var method = windowLayoutType.GetMethod("LoadWindowLayout", new[] { typeof(string), typeof(bool) });
+			
+			method.Invoke(null, new object[] { Path.Combine(Application.dataPath, "»Readme/Layout.wlt"), false });
+		}
+		catch (Exception e)
+		{
+			Debug.LogException(e);
+		}
 	}
 	
 	[MenuItem("Help/Project Kaya README", false, 1800)]
