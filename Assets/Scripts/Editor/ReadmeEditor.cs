@@ -4,7 +4,11 @@ using UnityEngine;
 using UnityEditor;
 using System;
 using System.IO;
+using System.Linq;
 using System.Reflection;
+using UnityEditor.SceneManagement;
+using UnityEngine.SceneManagement;
+using Object = UnityEngine.Object;
 
 [CustomEditor(typeof(Readme))]
 [InitializeOnLoad]
@@ -42,23 +46,31 @@ public class ReadmeEditor : Editor {
 		method.Invoke(null, new object[]{Path.Combine(Application.dataPath, "»Readme/Layout.wlt"), false});
 	}
 	
-	[MenuItem("Help/Project Readme")]
-	static Readme SelectReadme() 
+	[MenuItem("Help/Project Kaya README", false, 1800)]
+	static Readme SelectReadme()
 	{
-		var ids = AssetDatabase.FindAssets("Readme t:Readme");
-		if (ids.Length == 1)
-		{
-			var readmeObject = AssetDatabase.LoadMainAssetAtPath(AssetDatabase.GUIDToAssetPath(ids[0]));
+		Object readmeObject = EditorGUIUtility.Load("Readme/ProjectKaya.asset");
+		Selection.objects = new UnityEngine.Object[] { readmeObject };
 			
-			Selection.objects = new UnityEngine.Object[]{readmeObject};
+		return (Readme)readmeObject;
+	}
+	
+	[MenuItem("Help/URP CustomPass README", false, 1801)]
+	static Readme SelectCustomPassReadme()
+	{
+		Object readmeObject = EditorGUIUtility.Load("Readme/URP CustomPass.asset");
+		Selection.objects = new UnityEngine.Object[] { readmeObject };
 			
-			return (Readme)readmeObject;
-		}
-		else
-		{
-			Debug.Log("Couldn't find a readme");
-			return null;
-		}
+		return (Readme)readmeObject;
+	}
+	
+	[MenuItem("Help/Lobby Scene README", false, 1802)]
+	static Readme SelectUTKTemplateReadme()
+	{
+		Object readmeObject = EditorGUIUtility.Load("Readme/Lobby Scene.asset");
+		Selection.objects = new UnityEngine.Object[] { readmeObject };
+			
+		return (Readme)readmeObject;
 	}
 	
 	protected override void OnHeaderGUI()
@@ -96,7 +108,45 @@ public class ReadmeEditor : Editor {
 				GUILayout.Space(kSpace / 2);
 				if (LinkLabel(new GUIContent(section.linkText)))
 				{
-					Application.OpenURL(section.url);
+					if (section.url.Contains("http"))
+					{
+						Application.OpenURL(section.url);
+					}
+					else if (section.url.Contains("guid://"))
+					{
+						string guid = section.url.Replace("guid://", "");
+						string path = AssetDatabase.GUIDToAssetPath(guid);
+						Object asset = AssetDatabase.LoadAssetAtPath<Object>(path);
+
+						if (asset != null)
+						{
+							Selection.objects = new[] { asset };
+						}
+					}
+					else if (section.url.Contains("openscene://"))
+					{
+						bool isDirty = false;
+						string sceneName = section.url.Replace("openscene://", "");
+						var scenes = new List<Scene>();
+						int openedSceneCount = SceneManager.sceneCount;
+						for (int i = 0; i < openedSceneCount; i++)
+						{
+							var scene = SceneManager.GetSceneAt(i);
+							scenes.Add(scene);
+
+							if (scene.isDirty)
+							{
+								isDirty = true;
+							}
+						}
+
+						if (isDirty)
+						{
+							EditorSceneManager.SaveModifiedScenesIfUserWantsTo(scenes.ToArray());
+						}
+						
+						EditorSceneManager.OpenScene(sceneName);
+					}
 				}
 			}
 			GUILayout.Space(kSpace);
