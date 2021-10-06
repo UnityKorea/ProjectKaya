@@ -10,11 +10,11 @@ Mobile Platform을 위한 추가적인 최적화는 [모바일 게임 성능 최
 
 <p align="center">
 <a href="https://youtu.be/QqTeElxbTA0">
-<img src="https://img.youtube.com/vi/QqTeElxbTA0/0.jpg" style="margin: 1em">
+<img src="https://img.youtube.com/vi/QqTeElxbTA0/0.jpg" style="margin: 1em; width:45%">
 </a>
 
 <a href="https://youtu.be/SJBRPsziteQ">
-<img src="https://img.youtube.com/vi/SJBRPsziteQ/0.jpg" style="margin: 1em">
+<img src="https://img.youtube.com/vi/SJBRPsziteQ/0.jpg" style="margin: 1em; width:45%">
 </a>
 </p>
 
