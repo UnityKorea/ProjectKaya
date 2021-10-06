@@ -10,8 +10,8 @@ Mobile Platform을 위한 추가적인 최적화는 [모바일 게임 성능 최
   
 ![image](https://user-images.githubusercontent.com/33303599/135978553-f5b8648a-67fc-4119-9fb1-3b5f850b86e3.png)  
 
-###### Project Kaya는 Unity Technologies Korea의 URP 모바일 플랫폼을 사용하는 Unity 사용자를 위한 예시 프로젝트입니다. 유니티 프로젝트 내에서 본 프로젝트의 자원을 상업적/비 상업적으로 사용하는 것은 허용되지만 재배포는 허용되지 않습니다. 이 프로젝트의 저작권은 유니티코리아에 있습니다.   
-###### Project Kaya is an example project for unity users using  URP mobile platform from Unity Technologies Korea. Commercial/non-commercial use of this project's resources is permitted in the unity project, but redistribution is not permitted. All right reserved by copyrights of this project belong to Unity Korea.  
+###### Project Kaya는 Unity Technologies Korea의 URP 모바일 플랫폼을 사용하는 Unity 사용자를 위한 예시 프로젝트입니다. 유니티 프로젝트 내에서 본 프로젝트의 자원을 상업적/비 상업적으로 사용하는 것은 허용되지만 재배포는 허용되지 않습니다. 이 프로젝트의 저작권은 유니티코리아에 있습니다. 라이센스와 관련한 자세한 내용은 프로젝트내의 [Asset End User License Agreement] 문서를 참고해주세요.   
+###### Project Kaya is an example project for unity users using  URP mobile platform from Unity Technologies Korea. Commercial/non-commercial use of this project's resources is permitted in the unity project, but redistribution is not permitted. All right reserved by copyrights of this project belong to Unity Korea.For further details, please refer to the [Asset End User License Agreement] document in the project.   
 
 ## Requirement  
 - at least Unity 2021.1.13f1(Android module required) or above  
@@ -124,11 +124,11 @@ Animation Setting은 Generic을 사용하고 있습니다. 유니티의 Humanoid
 ![UTK_LobyEffectcherry_re](https://user-images.githubusercontent.com/33303599/136016992-ab0e663d-e509-4ea1-9cde-6b0d82bd3ce5.gif)  
 ** Unity Technologies Korea Evangelism dev 2021
 
-
 [모바일 게임 성능 최적화 01]: https://blog.unity.com/kr/technology/optimize-your-mobile-game-performance-tips-on-profiling-memory-and-code-architecture  
 [모바일 게임 성능 최적화 02]: https://blog.unity.com/kr/technology/optimize-your-mobile-game-performance-get-expert-tips-on-physics-ui-and-audio-settings  
 [Unity Webinar]: https://youtu.be/QqTeElxbTA0  
 [UniteSeoul 2020 Session]: https://youtu.be/SJBRPsziteQ  
+[Asset End User License Agreement]: https://github.com/UnityKorea/ProjectKaya/blob/main/Asset%20End%20User%20License%20Agreement.pdf  
 [URP 11.0]: https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@11.0/changelog/CHANGELOG.html  
 [ASTC]: https://en.wikipedia.org/wiki/Adaptive_scalable_texture_compression  
 [Universal Rendering Examples]: https://github.com/Unity-Technologies/UniversalRenderingExamples  
