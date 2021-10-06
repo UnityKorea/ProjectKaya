@@ -7,19 +7,29 @@ Mobile Platform을 위한 추가적인 최적화는 [모바일 게임 성능 최
 
 
 프로젝트에 대한 보다 많은 정보는 [Unity Webinar]와 [UniteSeoul 2020 Session] 영상을 참고 바랍니다.  
-  
-![image](https://user-images.githubusercontent.com/33303599/135978553-f5b8648a-67fc-4119-9fb1-3b5f850b86e3.png)  
+
+<p align="center">
+<a href="https://youtu.be/QqTeElxbTA0">
+<img src="https://img.youtube.com/vi/QqTeElxbTA0/0.jpg" style="margin: 1em">
+</a>
+
+<a href="https://youtu.be/SJBRPsziteQ">
+<img src="https://img.youtube.com/vi/SJBRPsziteQ/0.jpg" style="margin: 1em">
+</a>
+</p>
 
 ###### Project Kaya는 Unity Technologies Korea의 URP 모바일 플랫폼을 사용하는 Unity 사용자를 위한 예시 프로젝트입니다. 유니티 프로젝트 내에서 본 프로젝트의 자원을 상업적/비 상업적으로 사용하는 것은 허용되지만 재배포는 허용되지 않습니다. 이 프로젝트의 저작권은 유니티코리아에 있습니다. 라이센스와 관련한 자세한 내용은 프로젝트내의 [Asset End User License Agreement] 문서를 참고해주세요.   
 ###### Project Kaya is an example project for unity users using  URP mobile platform from Unity Technologies Korea. Commercial/non-commercial use of this project's resources is permitted in the unity project, but redistribution is not permitted. All right reserved by copyrights of this project belong to Unity Korea.For further details, please refer to the [Asset End User License Agreement] document in the project.   
 
+---
 ## Requirement  
 - at least Unity 2021.1.13f1(Android module required) or above  
 - [URP 11.0]   
 - Android Platform module Required  
 - Vulkan API supported(Visual Effect Graph를 사용하지 않는다면 ES 3.0이상)  
-- LFS Required  
-- git clone 명령어로도 프로젝트 다운로드가 가능합니다. git clone https://github.com/UnityKorea/ProjectKaya  
+- LFS Required (GitHub 리포지토리에서 다운로드시 Texture 미포함) 
+- 윈도우 터미널, cmd, git bash 등에서 명령어 실행 ```git clone https://github.com/UnityKorea/ProjectKaya```  
+
 ### editor setting  
 ![image](https://user-images.githubusercontent.com/33303599/133048003-a38cb6cf-04b7-4670-833d-cf9ecd193a22.png)  
 Kaya project는 android 플랫폼을 기준으로 작업되고 있습니다. 이를 위해서 editor를 이와 같은 환경으로 셋팅해주어야 합니다. 커맨드라인 인자 추가에 -force-vulkan을 입력해 vulkan api로 동작하도록 설정합니다.   
