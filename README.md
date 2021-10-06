@@ -1,6 +1,7 @@
 
 # ProjectKaya  
 ![image](https://user-images.githubusercontent.com/33303599/132323335-2ffb8e2c-600a-4672-8a60-14c312b16aeb.png)  
+  
 프로젝트 카야는 유니티 코리아에서 진행하는 URP를 활용한 모바일 예제 프로젝트 입니다.  
 공개된 repository는 지속적으로 업데이트 되며, 사용자가 프로젝트에 기여하는 것도 가능합니다.   
 Mobile Platform을 위한 추가적인 최적화는 [모바일 게임 성능 최적화 01] [모바일 게임 성능 최적화 02] 문서를 참고하시기 바랍니다.   
@@ -49,7 +50,7 @@ Kaya project는 android 플랫폼을 기준으로 작업되고 있습니다. 이
 _- 2048 normal texture를 ASTC12x12(0.6MB)으로 압축한것(좌)과 ASTC6x6(2.4MB)로 압축한 결과(우) 비교  
 Albedo texture의 경우보다 normal texture에서 이런 증상이 두드러지며 이럴경우는 리소스 압축 포맷과 옵션을 직접 선택하는 것을 권장합니다._  
 ## Scene List  
-Roby scene은 로비 구현에 필요한 연출과 shader 예제를 제공하고 있습니다.  
+Lobby scene은 로비 구현에 필요한 연출과 shader 예제를 제공하고 있습니다.  
 Animation type은 Generic으로 mechanim으로 구성되어 있습니다.  
   
 ### Lobby Scene
