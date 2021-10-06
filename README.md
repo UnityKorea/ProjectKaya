@@ -42,7 +42,7 @@ Albedo texture의 경우보다 normal texture에서 이런 증상이 두드러�
 Roby scene은 로비 구현에 필요한 연출과 shader 예제를 제공하고 있습니다.  
 Animation type은 Generic으로 mechanim으로 구성되어 있습니다.  
   
-### Roby Scene
+### Lobby Scene
 ----------------------------  
 #### FPS Counter & information display  
 ![image](https://user-images.githubusercontent.com/33303599/135036207-4f35c27e-f50f-43a0-8613-7cae79fe5447.png)  
