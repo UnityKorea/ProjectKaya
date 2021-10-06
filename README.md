@@ -9,11 +9,11 @@ Mobile Platform을 위한 추가적인 최적화는 [모바일 게임 성능 최
 프로젝트에 대한 보다 많은 정보는 [Unity Webinar]와 [UniteSeoul 2020 Session] 영상을 참고 바랍니다.  
 
 <p align="center">
-<a href="https://youtu.be/QqTeElxbTA0">
+<a href="https://youtu.be/QqTeElxbTA0" target="_blank">
 <img src="https://img.youtube.com/vi/QqTeElxbTA0/0.jpg" style="margin: 1em; width:45%">
 </a>
 
-<a href="https://youtu.be/SJBRPsziteQ">
+<a href="https://youtu.be/SJBRPsziteQ" target="_blank">
 <img src="https://img.youtube.com/vi/SJBRPsziteQ/0.jpg" style="margin: 1em; width:45%">
 </a>
 </p>
