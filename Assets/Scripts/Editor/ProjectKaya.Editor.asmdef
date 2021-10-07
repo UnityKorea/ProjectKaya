@@ -1,0 +1,18 @@
+{
+    "name": "ProjectKaya.Editor",
+    "rootNamespace": "ProjectKaya.Editor",
+    "references": [
+        "GUID:1e00bd246b6d5c7469855d67a0af69f5"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

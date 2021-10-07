@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fcf7219bab7fe46a1ad266029b2fee19, type: 3}
-  m_Name: ReadmeUTKTemplate
+  m_Name: Lobby Scene
   m_EditorClassIdentifier: 
   icon: {fileID: 2800000, guid: 0361953f956185c458516797cf650d10, type: 3}
   iconMaxWidth: 192
