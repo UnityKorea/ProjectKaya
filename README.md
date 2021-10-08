@@ -79,6 +79,8 @@ Render texture와 shader custom을 통한 실시간 reflection을 구현한 예�
 - Resoultion Mutiplier : 렌더링되는 반사이미지의 해상도를 설정  
 - Clip Plane Offset : 반사되는 이미지의 시작점을 설정  
 - Reflect Layer : 반사를 적용할 오브젝트 레이어를 선택  
+- Draw Dithering : 캐릭터 디더링을 반사에 그릴지 여부  
+  
 ![image](https://user-images.githubusercontent.com/33303599/135055375-924ad498-233b-49e2-8f61-a0bd33d605bd.png)  
 ### PBR Custom Shader(Shader Graph)  
 ----------------------------  
