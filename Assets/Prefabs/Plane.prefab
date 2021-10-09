@@ -53,6 +53,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -109,6 +110,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c029ed388044546468496144a1855984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_ditherRenderFeature: {fileID: 1679087545989612385, guid: fe329943173f943819cdbf4fd7295401,
+    type: 2}
+  m_drawDithering: 0
   m_settings:
     m_ResolutionMultiplier: 1
     m_ClipPlaneOffset: 0.07

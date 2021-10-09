@@ -12,6 +12,12 @@ namespace UnityEngine.Rendering.Universal
     [ExecuteInEditMode]
     public class PlanarReflections : MonoBehaviour
     {
+        [Header("Dithering")]
+        [Tooltip("URP Settings/ForwardRenderer/Dither")]
+        [SerializeField] private ScriptableRendererFeature m_ditherRenderFeature;
+        [Tooltip("반사에서도 프랍에 가려진 캐릭터를 디더링 상태로 그립니다")]
+        [SerializeField] private bool m_drawDithering = true;
+        
         [Serializable]
         public enum ResolutionMulltiplier
         {
@@ -49,7 +55,7 @@ namespace UnityEngine.Rendering.Universal
         }
 
         
-        public static event Action<ScriptableRenderContext, Camera> BeginPlanarReflections;
+        // public static event Action<ScriptableRenderContext, Camera> BeginPlanarReflections;
 
         private void OnEnable()
         {
@@ -271,8 +277,20 @@ namespace UnityEngine.Rendering.Universal
             var data = new PlanarReflectionSettingData(); // save quality settings and lower them for the planar reflections
             data.Set(); // set quality settings
 
-            BeginPlanarReflections?.Invoke(context, _reflectionCamera); // callback Action for PlanarReflection
+            // BeginPlanarReflections?.Invoke(context, _reflectionCamera); // callback Action for PlanarReflection
+            
+            // 디더링 끄고 RT에 그리고 다시 켜기
+            if (!m_drawDithering && m_ditherRenderFeature != null)
+            {
+                m_ditherRenderFeature.SetActive(false);
+            }
+            
             UniversalRenderPipeline.RenderSingleCamera(context, _reflectionCamera); // render planar reflections
+            
+            if (!m_drawDithering && m_ditherRenderFeature != null)
+            {
+                m_ditherRenderFeature.SetActive(true);
+            }
 
             data.Restore(); // restore the quality settings
             Shader.SetGlobalTexture(_planarReflectionTextureId, _reflectionTexture); // Assign texture to water shader
