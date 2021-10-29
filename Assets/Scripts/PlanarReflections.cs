@@ -46,7 +46,9 @@ namespace UnityEngine.Rendering.Universal
 
         private static Camera _reflectionCamera;
         public RenderTexture _reflectionTexture;
+        
         private readonly int _planarReflectionTextureId = Shader.PropertyToID("_PlanarReflectionTexture");
+        private MeshRenderer _meshRenderer = default;
 
         //private int2 _oldReflectionTextureSize;
         public void RefreshReflectionResolution()
@@ -61,6 +63,11 @@ namespace UnityEngine.Rendering.Universal
         {
             _needToRefreshReflectionResolution = true;
             RenderPipelineManager.beginCameraRendering += ExecutePlanarReflections;
+            
+            if (_meshRenderer == null)
+            {
+                _meshRenderer = GetComponent<MeshRenderer>();
+            }
         }
 
         // Cleanup all the objects we possibly have created
@@ -206,12 +213,6 @@ namespace UnityEngine.Rendering.Universal
             }
         }
 
-        // Compare two int2
-        //private static bool Int2Compare(Vector2 a, Vector2 b)
-        //{
-        //    return a.x == b.x && a.y == b.y;
-        //}
-
         // Given position/normal of the plane, calculates plane in camera space.
         private Vector4 CameraSpacePlane(Camera cam, Vector3 pos, Vector3 normal, float sideSign)
         {
@@ -225,19 +226,24 @@ namespace UnityEngine.Rendering.Universal
         private Camera CreateMirrorObjects()
         {
             //Debug.Log("CreateMirrorObjects");
-            
-            var go = new GameObject("Planar Reflections",typeof(Camera));
+
+            var go = new GameObject("Planar Reflections");
+            var reflectionCamera = go.AddComponent<Camera>();
             var cameraData = go.AddComponent(typeof(UniversalAdditionalCameraData)) as UniversalAdditionalCameraData;
+
+#if UNITY_EDITOR
+            Assertions.Assert.IsNotNull(cameraData);
+#endif
 
             cameraData.requiresColorOption = CameraOverrideOption.Off;
             cameraData.requiresDepthOption = CameraOverrideOption.Off;
             //cameraData.SetRenderer(1);
 
             var t = transform;
-            var reflectionCamera = go.GetComponent<Camera>();
             reflectionCamera.transform.SetPositionAndRotation(t.position, t.rotation);
             reflectionCamera.depth = -10;
             reflectionCamera.enabled = false;
+            
             go.hideFlags = HideFlags.HideAndDontSave;
 
             return reflectionCamera;
@@ -252,6 +258,13 @@ namespace UnityEngine.Rendering.Universal
                 const RenderTextureFormat hdrFormat = useHdr10 ? RenderTextureFormat.RGB111110Float : RenderTextureFormat.DefaultHDR;
                 _reflectionTexture = RenderTexture.GetTemporary((int)res.x, (int)res.y, 16,
                     GraphicsFormatUtility.GetGraphicsFormat(hdrFormat, true));
+                
+                Texture tex = _meshRenderer.sharedMaterial.GetTexture(_planarReflectionTextureId);
+                if (!ReferenceEquals(tex, _reflectionTexture))
+                {
+                    _meshRenderer.sharedMaterial.SetTexture(_planarReflectionTextureId, _reflectionTexture);
+                }
+                
                 _needToRefreshReflectionResolution = false;
             }
             _reflectionCamera.targetTexture =  _reflectionTexture;
@@ -266,7 +279,6 @@ namespace UnityEngine.Rendering.Universal
 
         private void ExecutePlanarReflections(ScriptableRenderContext context, Camera camera)
         {
-            //Debug.Log("ExecutePlanarReflections");
             // we dont want to render planar reflections in reflections or previews
             if (camera.cameraType == CameraType.Reflection || camera.cameraType == CameraType.Preview)
                 return;
@@ -277,8 +289,6 @@ namespace UnityEngine.Rendering.Universal
             var data = new PlanarReflectionSettingData(); // save quality settings and lower them for the planar reflections
             data.Set(); // set quality settings
 
-            // BeginPlanarReflections?.Invoke(context, _reflectionCamera); // callback Action for PlanarReflection
-            
             // 디더링 끄고 RT에 그리고 다시 켜기
             if (!m_drawDithering && m_ditherRenderFeature != null)
             {
@@ -293,13 +303,9 @@ namespace UnityEngine.Rendering.Universal
             }
 
             data.Restore(); // restore the quality settings
-            Shader.SetGlobalTexture(_planarReflectionTextureId, _reflectionTexture); // Assign texture to water shader
-            Shader.SetGlobalTexture("_PlanarReflectionTexture", _reflectionTexture);
-            
-            gameObject.GetComponent<MeshRenderer>().sharedMaterial.SetTexture("_PlanarReflectionTexture", _reflectionTexture);
         }
 
-        class PlanarReflectionSettingData
+        private class PlanarReflectionSettingData
         {
             private readonly bool _fog;
             private readonly int _maxLod;
