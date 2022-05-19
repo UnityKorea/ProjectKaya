@@ -6,10 +6,10 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/UTKTemplate_origin.unity
+    path: Assets/Scenes/UTKTemplate_Lobby.unity
     guid: 2fbf5c5cbf6748f44a3132465dbb807e
   - enabled: 1
-    path: Assets/Scenes/MovementScene.unity
+    path: Assets/Scenes/UTKTemplate_Action.unity
     guid: 9d42458fab93f4f4b93381c90e158293
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: c3bf9283c9f51544886018cfa8e5f1f3,
