@@ -23,11 +23,19 @@ Mobile Platform을 위한 추가적인 최적화는 [모바일 게임 성능 최
 ###### Project Kaya is an example project for unity users using  URP mobile platform from Unity Technologies Korea. Commercial/non-commercial use of this project's resources is permitted in the unity project, but redistribution is not permitted. All right reserved by copyrights of this project belong to Unity Korea.For further details, please refer to the [Asset End User License Agreement] document in the project.   
 
 ---
+## released note(kaya ver 1.1)
+- UI anchor setting, UI Transform 정리
+- skill, action UI layout 변경. 기타 세부사항 정리
+- Hierarchy 정리
+- Material example scene 개선중(수정 예정)
+- shader graph node 수정
+ 
+---
 ## Requirement
 - at least Unity 2021.3.2f1 LTS (Android module required) or above (2021.1.13f1 이전 버전은 주석 처리된 unpacknormal을 활성화해야 합니다.)
 - [URP 12.1](https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@12.1/changelog/CHANGELOG.html)
 - Android Platform module Required  
-- Vulkan API supported(Visual Effect Graph를 사용하지 않는다면 ES 3.0이상)  
+- Vulkan API supported(Visual Effect Graph를 사용하지 않는다면 ES 3.1이상)  
 - 윈도우 터미널, cmd, git bash 등에서 명령어 실행 ```git clone https://github.com/UnityKorea/ProjectKaya```  
 
 ### editor setting  
