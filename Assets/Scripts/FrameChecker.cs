@@ -19,11 +19,11 @@ public class FrameChecker : MonoBehaviour
     {
         int w = Screen.width, h = Screen.height;
 
-        _rect = new Rect(0, 0, w, h * 4 / 100f);
+        _rect = new Rect(10, 10, w, h * 4 / 100f);
 
         _style = new GUIStyle();
         _style.alignment = TextAnchor.UpperLeft;
-        _style.fontSize = h * 4 / 130;
+        _style.fontSize = h * 4 / 180;
         _style.normal.textColor = Color.cyan;
 
         StartCoroutine(WorstReset_Coroutine());

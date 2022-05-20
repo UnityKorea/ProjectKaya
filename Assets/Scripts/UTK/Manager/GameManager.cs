@@ -23,8 +23,8 @@ namespace UTK.Manager
 
     public enum SceneNames
     {
-        UTKTemplate_origin = 0,
-        MovementScene = 1,
+        UTKTemplate_Lobby = 0,
+        UTKTemplate_Action = 1,
     }
 
     public struct UtkEvent
@@ -95,7 +95,7 @@ namespace UTK.Manager
                     SetActiveInventory(true);
                     break;
                 case UtkEventTypes.MoveToLobby:
-                    SceneManager.LoadSceneAsync(SceneNames.UTKTemplate_origin.ToString(), LoadSceneMode.Single);
+                    SceneManager.LoadSceneAsync(SceneNames.UTKTemplate_Lobby.ToString(), LoadSceneMode.Single);
                     break;
                 case UtkEventTypes.OpenSetting:
                     SetActiveSetting(true);

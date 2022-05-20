@@ -23,12 +23,11 @@ Mobile Platform을 위한 추가적인 최적화는 [모바일 게임 성능 최
 ###### Project Kaya is an example project for unity users using  URP mobile platform from Unity Technologies Korea. Commercial/non-commercial use of this project's resources is permitted in the unity project, but redistribution is not permitted. All right reserved by copyrights of this project belong to Unity Korea.For further details, please refer to the [Asset End User License Agreement] document in the project.   
 
 ---
-## Requirement  
-- at least Unity 2021.1.13f1(Android module required) or above(이후 버젼에서 hair shader unpacknormal이 중복 선언되는 현상이 있습니다. 이부분 수정하셔야 할수 있습니다)  
-- [URP 11.0]   
+## Requirement
+- at least Unity 2021.3.2f1 LTS (Android module required) or above (2021.1.13f1 이전 버전은 주석 처리된 unpacknormal을 활성화해야 합니다.)
+- [URP 12.1](https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@12.1/changelog/CHANGELOG.html)
 - Android Platform module Required  
 - Vulkan API supported(Visual Effect Graph를 사용하지 않는다면 ES 3.0이상)  
-
 - 윈도우 터미널, cmd, git bash 등에서 명령어 실행 ```git clone https://github.com/UnityKorea/ProjectKaya```  
 
 ### editor setting  
@@ -134,7 +133,18 @@ Animation Setting은 Generic을 사용하고 있습니다. 유니티의 Humanoid
 실제 모바일 빌드시 OpenGL ES 3.2 환경에서도 제대로 출력되지 않는 부분들이 있습니다.(vulkan 권장)  
 ![image](https://user-images.githubusercontent.com/33303599/136010929-f6f3b48a-4321-427a-87ba-a6e988217300.png)
 
+### UserInterface
 ---------------------------------------
+전체적으로 앵커 적용하여 컴포넌트 배치를 개선하고 테마를 일치하는 업데이트가 진행되었습니다.
+## Lobby Scene 
+![image](https://user-images.githubusercontent.com/105784120/169461088-ae07aa23-14b4-4e5a-9123-995fa76a6744.png)  
+![image](https://user-images.githubusercontent.com/105784120/169462347-0746ab14-8d6d-4abd-b978-79aa606ccd07.png)
+
+## Action Scene 
+![image](https://user-images.githubusercontent.com/105784120/169462458-1b5f49d0-7fc5-4a92-8c89-40e5cc62058c.png) 
+![image](https://user-images.githubusercontent.com/105784120/169462534-eb9961be-e668-4312-ab10-b26e3c73aac2.png)
+---------------------------------------
+
 ![UTK_LobyEffectcherry_re](https://user-images.githubusercontent.com/33303599/136016992-ab0e663d-e509-4ea1-9cde-6b0d82bd3ce5.gif)  
 ** Unity Technologies Korea Evangelism dev 2021
 

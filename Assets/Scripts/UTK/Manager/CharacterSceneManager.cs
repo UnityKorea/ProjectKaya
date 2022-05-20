@@ -27,7 +27,7 @@ public class CharacterSceneManager : MonoBehaviour, IUtkEventListener<UtkEvent>
                 ChangeDayNight(false);
                 break;
             case UtkEventTypes.MoveToCharacter:
-                SceneManager.LoadSceneAsync(SceneNames.MovementScene.ToString(), LoadSceneMode.Single);
+                SceneManager.LoadSceneAsync(SceneNames.UTKTemplate_Action.ToString(), LoadSceneMode.Single);
                 break;
         }
     }
