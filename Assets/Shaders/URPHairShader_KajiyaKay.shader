@@ -158,7 +158,6 @@ Shader "UTKTemplate/URPHairKajiyaKay"
 
 			  //Based on PCPlatform. R/5bit, G/6bit, B/5bit, A/8bit R>G, G>A if using mobile, modified *2.0 - 1.0.
 			  //Packages/com.unity.render-pipelines.universal/ShaderLibrary/Core.hlsl
-			  //If use 2021.1.13f1 under version, You need activate this code.
 			  /*
               #if _NORMALMAP_ON
 					  inline half3 UnpackNormal(half4 packednormal)
@@ -169,8 +168,7 @@ Shader "UTKTemplate/URPHairKajiyaKay"
 						return normal;
 					   }
               #endif
-			  */
-               
+              */
 				  inline half3 TangentNormalToWorldNormal(float3 TangnetNormal, float3 T, float3  B, float3 N)
 				   {
 					 float3x3 TBN = float3x3(T, B, N);
